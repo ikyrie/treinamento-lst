@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    min-height: 100vh;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    background-color: #5f1f1f;
+}
+
+header {
+    padding: 4rem calc((100vw - 920px) / 2);
+    background-color: #382222;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+section {
+    margin: 3rem 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    max-width: 920px;
+    margin: 1rem auto;
+}
+
+.botao {
+    min-width: 6rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.botao--primario {
+    background-color: #ebb736;
+    color: #000000;
+}
+
+.botao--secundario {
+    background-color: #661414;
+    color: #FFFFFF;
+}
+
+.cartoes {
+    display: grid;
+    grid-template-columns: repeat(3, min(300px));
+    gap: 2rem;
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: #967171;
+}
+
+.cartao_botoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.modal {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.form_inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.form_inputs input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.form_botoes {
+    display: flex;
+    gap: 1rem;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meus Filmes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="titulo">Meus Filmes</h1>
+    </header>
+    <main class="container">
+      <section class="cartoes" id="cartoes">
+      </section>
+      <button class="botao botao--primario" id="adicionarFilme">
+        Novo Filme
+      </button>
+      <form action="https://localhost:3000/movies" id="formulario" method="post">
+        <div class="modal">
+          <input type="text" name="id" id="id" class="hidden" />
+          <div class="form_inputs">
+            <label for="titulo">Titulo</label>
+            <input type="text" name="title" id="titulo" />
+          </div>
+          <div class="form_inputs">
+            <label for="descricao">Descricao</label>
+            <input type="text" name="description" id="descricao" />
+          </div>
+          <div class="form_botoes">
+            <button class="botao" id="cancelar" type="reset">Cancelar</button>
+            <button class="botao" id="salvar">Salvar</button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
