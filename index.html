@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,12 +12,15 @@
       <h1 class="titulo">Meus Filmes</h1>
     </header>
     <main class="container">
-      <section class="cartoes" id="cartoes">
-      </section>
+      <section class="cartoes" id="cartoes"></section>
       <button class="botao botao--primario" id="adicionarFilme">
         Novo Filme
       </button>
-      <form action="https://localhost:3000/movies" id="formulario" method="post">
+      <form
+        action="https://localhost:3000/movies"
+        id="formulario"
+        method="post"
+      >
         <div class="modal">
           <input type="text" name="id" id="id" class="hidden" />
           <div class="form_inputs">
