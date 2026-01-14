@@ -79,4 +79,4 @@ async function addMovie() {
   await fetch(endereco, {method: metodo, body: JSON.stringify(body), headers: headers});
 }
 
-botaoSalvar.onclick = async () => {addMovie()};
+botaoSalvar.onclick = addMovie;
